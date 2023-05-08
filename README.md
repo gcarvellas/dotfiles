@@ -6,9 +6,11 @@
 - dunst v1.9.0
 - brillo v1.4.12 https://gitlab.com/cameronnemo/brillo
 - Font Awesome 6
-- powerprofilesctl 0.12
-- pactl 16.1
-- gnome terminal 3.48.0
+- powerprofilesctl v0.12
+- pactl v16.1
+- gnome terminal v3.48.0
+- feh v3.9.1
+- compton
 
 ## Images
 ![image](./images/1.png)
