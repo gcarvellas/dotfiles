@@ -2,6 +2,7 @@
 
 ## Requirements
 
+- Arch Linux
 - i3 v4.22
 - dunst v1.9.0
 - brillo v1.4.12 https://gitlab.com/cameronnemo/brillo
@@ -10,7 +11,12 @@
 - pactl v16.1
 - gnome terminal v3.48.0
 - feh v3.9.1
-- compton
+- picom vgit-b700a
+- dmenu-5.2
+- Font Awesome 6
+- Nerd Fonts
+- network-manager-applet 1.32.0
+- xdotool-3.20211022.1-1
 
 ## Images
 ![image](./images/1.png)

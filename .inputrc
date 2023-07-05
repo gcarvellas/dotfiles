@@ -1,0 +1,2 @@
+# Ctrl + K = ls -a
+bind '"\C-k":"ls -a\n"'

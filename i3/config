@@ -31,10 +31,10 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # Set Default Monitor Display
-exec --no-startup-id xrandr --output eDP-1-1 --mode 1920x1080 --rate 60.00 --output HDMI-0 --mode 1600x900 --rate 60.00 --right-of eDP-1-1 --output DP-0 --mode 1920x1080 --rate 144.00 --right-of HDMI-0 --primary
-workspace 1 output DP-1-1
-workspace 2 output HDMI-1-1
-workspace 3 output eDP-1
+exec --no-startup-id /usr/bin/monitor_refresh.sh
+workspace 1 output DP-4
+workspace 2 output eDP1
+workspace 3 output HDMI-0
 
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
@@ -183,7 +183,7 @@ exec --no-startup-id xinput set-prop "1A582011:00 06CB:CD73 Touchpad" "libinput 
 exec --no-startup-id xinput --set-prop "1A582011:00 06CB:CD73 Touchpad" 342 0
 
 # Enable Compositor
-exec compton
+exec picom --config ~/.config/compton.conf
 
 # Enable Smart Borders
 
@@ -192,8 +192,8 @@ smart_borders on
 # Colors 
 
 # Remove Borders
-new_window pixel 0
-new_float pixel 0
+default_border pixel 0
+default_floating_border pixel 0
 
 # Firefox
 
@@ -211,16 +211,20 @@ exec --no-startup-id snap run discord --start-minimized
 
 bar {
     
-   	status_command i3status
-
-   
+   	status_command i3blocks
+	position bottom
     colors {
-        background #3a2622
+        background #543636
+		statusline #f9ebeb
+		separator #BF7154
+		
+		focused_workspace #f4d7af #F2D399 #0e0902
+		inactive_workspace #c78066 #c07154 #0b0604
+		active_workspace #dfb096 #d9a282 #0c0604	
+		urgent_workspace #ca4444 #BF3636 #0c0303	
+		binding_mode #ca4444 #bf3636 #0c0303
     }
 }
-
-# Wallpaper
-exec --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/wallpaper.jpg
 
 # https://gitlab.com/Nmoleo/i3-volume-brightness-indicator
 # https://gitlab.com/cameronnemo/brillo
@@ -233,3 +237,16 @@ bindsym XF86MonBrightnessDown exec --no-startup-id /usr/bin/bash /usr/bin/volume
 
 #F4 = Change Battery Modes
 bindsym $mod+F4 exec --no-startup-id /usr/bin/bash /usr/bin/battery_mode.sh
+
+#Reset IBUS Daemon
+exec ---no-startup-id ibus-dameon -drx
+
+## Screenshots
+bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
+bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date)"
+bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/$(date)"
+
+## Clipboard Screenshots
+bindsym Ctrl+Print exec --no-startup-id maim | xclip -selection clipboard -t image/png
+bindsym Ctrl+$mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
