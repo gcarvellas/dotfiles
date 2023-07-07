@@ -17,6 +17,7 @@
 - Nerd Fonts
 - network-manager-applet 1.32.0
 - xdotool-3.20211022.1-1
+- pacman-contrib
 
 ## Images
 ![image](./images/1.png)
