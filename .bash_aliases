@@ -12,6 +12,7 @@ alias la='ls -A'
 alias ll='ls --color=auto -l'
 alias ls='ls --color=auto'
 alias icat="kitty +kitten icat"
-alias s="kitty +kitten ssh"
+alias ssh="kitty +kitten ssh"
+
 
 
