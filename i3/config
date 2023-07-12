@@ -238,6 +238,9 @@ bindsym XF86MonBrightnessDown exec --no-startup-id /usr/bin/bash /usr/bin/volume
 #F4 = Change Battery Modes
 bindsym $mod+F4 exec --no-startup-id /usr/bin/bash /usr/bin/battery_mode.sh
 
+#F5 = Toggle Compositor
+bindsym $mod+F5 exec --no-startup-id /usr/bin/bash /usr/bin/toggle_compositor.sh
+
 #Reset IBUS Daemon
 exec ---no-startup-id ibus-dameon -drx
 
