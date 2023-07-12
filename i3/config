@@ -201,11 +201,7 @@ bindsym $mod+Shift+f exec firefox
 
 # Discord
 
-bindsym $mod+Shift+d exec discord
-
-# Start discord in the background
-
-exec --no-startup-id snap run discord --start-minimized
+bindsym $mod+Shift+d exec firefox discord.com/app
 
 # Bar
 
