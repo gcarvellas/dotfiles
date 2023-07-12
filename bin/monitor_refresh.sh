@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ "$(xrandr --listmonitors | wc -l)" -le "3" ]]; then
+if [[ "$(xrandr --listmonitors | wc -l)" -lt "3" ]]; then
 	xrandr --output eDP1 --mode 1920x1080 --rate 144.00 --primary;
 else
 	# Hometown Setup
