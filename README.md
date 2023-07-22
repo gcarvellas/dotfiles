@@ -18,6 +18,8 @@
 - network-manager-applet 1.32.0
 - xdotool-3.20211022.1-1
 - pacman-contrib
+- wireless_tools-30.pre9-3
+- sysstat-12.7.2-1
 
 ## Images
 ![image](./images/1.png)

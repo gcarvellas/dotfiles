@@ -1,5 +1,3 @@
-# Edited from https://github.com/denisse-dev/dotfiles/tree/main
-
 # For the benefit of emacs users: -*- shell-script -*-
 #
 #  _ _____ _     _            _
@@ -13,17 +11,6 @@ separator=false
 color=#f8f8f2
 separator_block_width=15
 markup=pango
-
-[wifi]
-command=iwgetid -r | tr '\n' ' ' && grep $(iwgetid -m | awk '{ printf "%s", $1 }') /proc/net/wireless | awk '{ printf "%i%\n", int($3 * 100 / 70) }'
-instance=wlp11s0f3u1
-interval=5
-label=<span color="#ff79c6"> </span>
-border=#ff79c6
-border_top=1
-border_right=0
-border_bottom=0
-border_left=0
 
 [mediaplayer]
 command=playerctl metadata --format "{{ artist }} <span color=\"#bd93f9\">-</span> {{ title }}"
@@ -46,10 +33,10 @@ border_bottom=0
 border_left=0
 
 [home]
-command=df -h /home | awk 'FNR==2 { gsub(/[A-Za-z]/, ""); printf "%i<span color=\"#50fa7b\">GiB</span>\n", $4 }'
+command=df -h /home | awk 'FNR==2 { gsub(/[A-Za-z]/, ""); printf "%i<span color=\"#d1ffbd\">GiB</span>\n", $4 }'
 interval=3
-label=<span color="#50fa7b"> </span>
-border=#50fa7b
+label=<span color="#50fad5"> </span>
+border=#50fad5
 border_top=1
 border_right=0
 border_bottom=0
@@ -76,9 +63,9 @@ border_bottom=0
 border_left=0
 
 [cpu_stats]
-command=sar -u 1 1 | awk 'FNR == 5 { printf "%04.1f<span color=\"#ff5555\">%</span>", (100 - $8) } ' && sensors | awk '{ if ($1 == "CPU" && $2 == "Temperature:") { gsub(/[+°C]/, "") ; printf " %i<span color=\"#ff5555\">°C</span>\n", $3 } }'
+command=sar -u 1 1 | awk 'FNR == 5 { printf "%04.1f<span color=\"#be55ff\">%</span>", (100 - $8) } ' && sensors | awk '{ if ($1 == "CPU" && $2 == "Temperature:") { gsub(/[+°C]/, "") ; printf " %i<span color=\"#be55ff\">°C</span>\n", $3 } }'
 interval=2
-label=<span color="#ff5555"><b>CPU: </b></span>
+label=<span color="#be55ff"><b>CPU: </b></span>
 border=#ff5555
 border_top=1
 border_right=0
@@ -106,10 +93,9 @@ border_bottom=0
 border_left=0
 
 [battery]
-command="/home/gcarvellas/.config/i3blocks/battery.sh"
+command=echo "<span color=\"#50fa7b\">$(~/.config/i3blocks/battery_symbol.sh)</span> $(~/.config/i3blocks/battery_status.sh)"
 interval=2
-color=#ff5555
-border=#ff5555
+border=#50fa7b
 border_top=1
 border_right=0
 border_bottom=0
@@ -120,6 +106,17 @@ command=TZ=":US/Eastern" date '+%I : %M %Z' | awk '{ printf "%s<span color=\"#f1
 interval=1
 label=<span color="#f1fa8c"> </span>
 border=#f1fa8c
+border_top=1
+border_right=0
+border_bottom=0
+border_left=0
+
+[wifi]
+command=iwgetid -r | tr '\n' ' ' && grep $(iwgetid -m | awk '{ printf "%s", $1 }') /proc/net/wireless | awk '{ printf "%i%\n", int($3 * 100 / 70) }'
+instance=wlp11s0f3u1
+interval=5
+label=<span color="#08a1ec"> </span>
+border=#08a1ec
 border_top=1
 border_right=0
 border_bottom=0
