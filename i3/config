@@ -205,7 +205,7 @@ bindsym $mod+Shift+d exec firefox discord.com/app
 
 # Codium
 
-bindsym $mod+Shift+c exec codium
+bindsym $mod+Shift+c exec code
 
 # Bar
 

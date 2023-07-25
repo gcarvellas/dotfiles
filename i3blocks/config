@@ -63,9 +63,9 @@ border_bottom=0
 border_left=0
 
 [cpu_stats]
-command=sar -u 1 1 | awk 'FNR == 5 { printf "%04.1f<span color=\"#be55ff\">%</span>", (100 - $8) } ' && sensors | awk '{ if ($1 == "CPU" && $2 == "Temperature:") { gsub(/[+°C]/, "") ; printf " %i<span color=\"#be55ff\">°C</span>\n", $3 } }'
+command=sar -u 1 1 | awk 'FNR == 5 { printf "%04.1f<span color=\"#ff5555\">%</span>", (100 - $8) } ' && sensors | awk '{ if ($1 == "CPU" && $2 == "Temperature:") { gsub(/[+°C]/, "") ; printf " %i<span color=\"#ff5555\">°C</span>\n", $3 } }' && echo ""
 interval=2
-label=<span color="#be55ff"><b>CPU: </b></span>
+label=<span color="#ff5555"><b>CPU: </b></span>
 border=#ff5555
 border_top=1
 border_right=0
@@ -73,7 +73,7 @@ border_bottom=0
 border_left=0
 
 [memory]
-command=free --giga | awk 'FNR==2{ printf "%i<span color=\"#ff79c6\">GiB</span>\n", $7 }'
+command=free --giga | awk 'FNR==2{ printf "%i<span color=\"#ff79c6\">GiB</span>\n", $3 }'
 interval=2
 label=<span color="#ff79c6"> </span>
 border=#ff79c6

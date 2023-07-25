@@ -1,5 +1,7 @@
 #/bin/bash
 
+set -e
+
 artist=$(playerctl metadata --format "{{ artist }}")
 title=$(playerctl metadata --format "{{ title }}")
 
