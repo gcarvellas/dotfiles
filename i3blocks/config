@@ -53,7 +53,7 @@ border_bottom=0
 border_left=0
 
 [gpu_stats]
-command=nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits | awk '{ printf "%02i<span color=\"#ffb86c\">%</span>", $0}' && nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits | awk '{ printf " %i<span color=\"#ffb86c\">°C</span>\n", $0}'
+command=nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits | awk '{ printf "%2i<span color=\"#ffb86c\">%</span>", $0}' && nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits | awk '{ printf " %i<span color=\"#ffb86c\">°C</span>\n", $0}'
 label=<span color="#ffb86c"><b>GPU: </b></span>
 interval=2
 border=#ffb86c
@@ -63,7 +63,7 @@ border_bottom=0
 border_left=0
 
 [cpu_stats]
-command=sar -u 1 1 | awk 'FNR == 5 { printf "%04.1f<span color=\"#ff5555\">%</span>", (100 - $8) } ' && sensors | awk '{ if ($1 == "CPU" && $2 == "Temperature:") { gsub(/[+°C]/, "") ; printf " %i<span color=\"#ff5555\">°C</span>\n", $3 } }' && echo ""
+command=~/.config/i3blocks/cpu_query.sh
 interval=2
 label=<span color="#ff5555"><b>CPU: </b></span>
 border=#ff5555
@@ -73,7 +73,7 @@ border_bottom=0
 border_left=0
 
 [memory]
-command=free --giga | awk 'FNR==2{ printf "%i<span color=\"#ff79c6\">GiB</span>\n", $3 }'
+command=free --giga | awk 'FNR==2{ printf "%i<span color=\"#ff79c6\">GiB</span>\n", $3+$5 }'
 interval=2
 label=<span color="#ff79c6"> </span>
 border=#ff79c6

@@ -19,5 +19,5 @@ alias ssh="kitty +kitten ssh"
 sniff(){
 	# sniffs in current directory
 	# $1 is num of entries
-	du -hs * | sort -rh | head -$1
+	du -hs -- * .[^.]* | sort -rh | head -$1
 }

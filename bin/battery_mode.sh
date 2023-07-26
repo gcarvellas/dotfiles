@@ -16,14 +16,12 @@ power-saver)
 
 #toggle from performance to balanced
 performance)
-	exec picom --config ~/.config/compton.conf &!
 	powerprofilesctl set balanced
 	dunstify -u normal -t 1000 -r 2593 "Set Power Mode to Balanced"
 	;;
 
 #toggle from balanced to power-saver
 balanced)
-	kill $(pidof picom)
 	powerprofilesctl set power-saver
 	dunstify -u normal -t 1000 -r 2593 "Set Power Mode to Power Saver"
 	;;
