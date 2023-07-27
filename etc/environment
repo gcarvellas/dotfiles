@@ -3,6 +3,4 @@
 #
 # Syntax: simple "KEY=VAL" pairs on separate lines
 #
-
-# https://www.reddit.com/r/firefox/comments/akifsw/scrolling_firefox_on_linux_with_a_high_refresh/
 CLUTTER_DEFAULT_FPS=144
