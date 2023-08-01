@@ -245,6 +245,9 @@ bindsym $mod+F5 exec --no-startup-id /usr/bin/bash /usr/bin/toggle_compositor.sh
 #F6 = Monitor Refresh
 bindsym $mod+F6 exec --no-startup-id /usr/bin/bash /usr/bin/monitor_refresh.sh
 
+#F7 = Clear all Notifications
+bindsym $mod+F7 exec --no-startup-id dunstctl close all
+
 #Reset IBUS Daemon
 exec ---no-startup-id ibus-dameon -drx
 
