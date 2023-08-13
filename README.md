@@ -21,6 +21,13 @@
 - wireless_tools-30.pre9-3
 - sysstat-12.7.2-1
 
+- https://github.com/yurikhan/kitty_grab
+
+## VSCode plugins
+- Noctis Bordo: https://vscodethemes.com/e/liviuschera.noctis/noctis-bordo?language=javascript
+- GlassIt-VSC: https://marketplace.visualstudio.com/items?itemName=s-nlf-fh.glassit
+
+
 ## Images
 ![image](./images/1.png)
 ![image](./images/2.png)

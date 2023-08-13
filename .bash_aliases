@@ -21,3 +21,5 @@ sniff(){
 	# $1 is num of entries
 	du -hs -- * .[^.]* | sort -rh | head -$1
 }
+
+alias dcu='docker-compose up'
