@@ -1,0 +1,34 @@
+# Views
+Super + T Toggle Terminal
+Super + F Toggle sidebar
+
+# Tabs
+
+Super + NUM go to tabnum
+Super + W   Close tab
+Super + K, Super + W   Close all tabs
+
+# Files
+Ctrl + P    Go to file name
+
+# Sidebar
+
+Ctrl + Shift + e     File exzplorer
+Ctrl + Shift + F     Find in files
+	Ctrl + arrowkeys   Select result
+
+# While Coding
+
+f, d    Open function definition
+
+# Slices
+Ctrl + \ Split editor into Slices
+Ctrl + SLICE_NO  open slice number
+
+# Debugging
+Super + B    Toggle breakpoint
+F5 = Continue
+F6 = Pause
+F11 = Step Into
+F12 = Step Over
+Shift + F5 = Stop

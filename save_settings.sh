@@ -31,3 +31,5 @@ cp ~/.bashrc .
 cp ~/.xinitrc .
 
 cp ~/.vimrc .
+
+cp ~/.config/Code/User/*.json ./Code/User/
