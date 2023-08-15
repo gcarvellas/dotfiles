@@ -7,6 +7,8 @@ Super + F Toggle sidebar
 Super + NUM go to tabnum
 Super + W   Close tab
 Super + K, Super + W   Close all tabs
+Super + J, Go to previous tab
+Super + ;, Go to next tab
 
 # Files
 Ctrl + P    Go to file name

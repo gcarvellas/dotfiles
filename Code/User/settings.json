@@ -34,5 +34,26 @@
     "glassit.alpha": 240,
     "workbench.colorTheme": "Noctis Bordo",
     "workbench.editor.enablePreview": false,
-    "extensions.ignoreRecommendations": true
+    "extensions.ignoreRecommendations": true,
+    "vim.useSystemClipboard": true,
+    "vim.visualModeKeyBindings": [
+        {
+            "before": ["<C-c>"],
+            "after": ["\"", "+", "y"]
+        },
+        {
+            "before": ["<C-v>"],
+            "after": ["\"", "+", "p"]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<C-c>"],
+            "after": ["\"", "+", "y"]
+        },
+        {
+            "before": ["<C-v>"],
+            "after": ["\"", "+", "p"]
+        }
+    ]
 }
