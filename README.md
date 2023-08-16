@@ -36,3 +36,4 @@
 
 - https://gitlab.com/Nmoleo/i3-volume-brightness-indicator
 - https://github.com/altindas/dots
+- https://github.com/Melkeydev/vscode_bindings

@@ -1,36 +1,33 @@
-# Views
-Super + T Toggle Terminal
-Super + F Toggle sidebar
+Leader = Space
 
-# Tabs
+# Window Management
+Shift + H/L, Go to tab left/right
+Leader + V = Open Vertical Panel
+Leader + H = Open Horizontal Panel
+Leader + X = Close tab
+Leader + Backspace = Close all tabs
 
-Super + NUM go to tabnum
-Super + W   Close tab
-Super + K, Super + W   Close all tabs
-Super + J, Go to previous tab
-Super + ;, Go to next tab
+# Terminal
+Ctrl + Shift + J = Toggle Terminal
+Ctrl + Shift + N = Make a new terminal
+Ctrl + Shift + A = Go up one terminal
+Ctrl + Shift + B = Go down one terminal
 
 # Files
-Ctrl + P    Go to file name
+Leader + F = Open file
 
-# Sidebar
+# File Tree
+Leader + N + E = Open file tree
+Ctrl + E = Toggle file visibility
+n = New File
+r = rename file
+Shift + n = New Folder
+d = delete file
 
-Ctrl + Shift + e     File exzplorer
-Ctrl + Shift + F     Find in files
-	Ctrl + arrowkeys   Select result
+# Misc
+Leader + W = Save File
+Leader + C = Comment Code
+<> = Indent
+g h = Function header
+g d = Function definition
 
-# While Coding
-
-f, d    Open function definition
-
-# Slices
-Ctrl + \ Split editor into Slices
-Ctrl + SLICE_NO  open slice number
-
-# Debugging
-Super + B    Toggle breakpoint
-F5 = Continue
-F6 = Pause
-F11 = Step Into
-F12 = Step Over
-Shift + F5 = Stop
