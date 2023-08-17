@@ -4,7 +4,6 @@
   "terminal.integrated.fontFamily": "Hack",
   "editor.linkedEditing": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "window.zoomLevel": 0.5,
   "launch": {},
   "workbench.colorTheme": "Noctis Bordo",
   "glassit.alpha": 240,
@@ -127,4 +126,5 @@
     // toggle comment selection
     { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
   ],
+  "window.zoomLevel": 0.5,
 }
