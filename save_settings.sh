@@ -2,7 +2,7 @@
 
 # Saves current computer's dotfiles into this folder
 
-declare -a bin_files=("battery_mode.sh" "monitor_refresh.sh" "toggle_compositor.sh" "volume_brightness.sh")
+declare -a bin_files=("battery_mode.sh" "bluetooth_scan.sh" "monitor_refresh.sh" "toggle_compositor.sh" "volume_brightness.sh")
 
 for bin_file in ${bin_files[@]}; do
 	cp /usr/bin/${bin_file} ./bin/
