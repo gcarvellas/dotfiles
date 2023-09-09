@@ -12,8 +12,6 @@ cp ~/.config/compton.conf ./compton
 
 cp ~/.config/dunst/dunstrc ./dunst
 
-cp /etc/environment ./etc
-
 cp ~/.local/share/fonts/Hack*.ttf ./fonts
 
 cp ~/.config/i3/config ./i3
