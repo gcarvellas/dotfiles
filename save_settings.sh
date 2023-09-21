@@ -33,3 +33,5 @@ cp ~/.vimrc .
 cp ~/.config/Code/User/*.json ./Code/User/
 
 cp ~/Documentation/vscode.txt vscode.txt
+
+sudo cp ~/modprobe.d /etc/modprobe.d

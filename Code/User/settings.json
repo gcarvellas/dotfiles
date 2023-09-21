@@ -13,9 +13,10 @@
   "editor.minimap.enabled": false,
   "breadcrumbs.enabled": false,
   "update.showReleaseNotes": false,
-  "workbench.activityBar.visible": false,
   "zenMode.hideLineNumbers": false,
   "zenMode.hideTabs": false,
+  "zenMode.centerLayout": true,
+  "zenMode.restore": true,
   "editor.lineNumbers": "relative",
   "editor.cursorSurroundingLines": 100, // Always keep cursor in the center
   "editor.cursorSurroundingLinesStyle": "all",
@@ -156,4 +157,5 @@
     "!Split",
     "!Split sequence"
   ],
+  "workbench.activityBar.visible": false,
 }

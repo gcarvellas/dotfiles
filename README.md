@@ -20,6 +20,8 @@
 - pacman-contrib
 - wireless_tools-30.pre9-3
 - sysstat-12.7.2-1
+- zathura
+
 
 - https://github.com/yurikhan/kitty_grab
 
