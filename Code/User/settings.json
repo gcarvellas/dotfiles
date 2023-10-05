@@ -3,6 +3,7 @@
   "editor.suggest.insertMode": "replace",
   "terminal.integrated.fontFamily": "Hack",
   "editor.linkedEditing": true,
+  "vim.easymotion": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "launch": {},
   "workbench.colorTheme": "Noctis Bordo",
@@ -35,7 +36,7 @@
     { "before": ["<S-l>"], "commands": [":bnext"] },
 
     // splits
-    { "before": ["leader", "h"], "commands": [":vsplit"] },
+    { "before": ["leader", "b"], "commands": [":vsplit"] },
     { "before": ["leader", "v"], "commands": [":split"] },
 
     // panes
@@ -158,4 +159,5 @@
     "!Split sequence"
   ],
   "workbench.activityBar.visible": false,
+  "extensions.ignoreRecommendations": true
 }
