@@ -209,7 +209,7 @@ bindsym $mod+Shift+c exec code
 # Bar
 
 bar {
-   	font pango:Exo2, Hack, SymbolsNerdFont 8
+   	font pango:Exo2, Hack, SymbolsNerdFont 10
 	status_command i3blocks
 	position bottom
     colors {
