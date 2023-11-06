@@ -29,6 +29,8 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 vim.opt.colorcolumn = "80"
 
+vim.opt.scrolloff = 999
+
 vim.api.nvim_set_hl(0, "Normal", { bg = "None" })
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = "None" })
 

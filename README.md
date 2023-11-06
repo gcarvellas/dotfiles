@@ -4,12 +4,12 @@
 
 - Arch Linux
 - i3 v4.22
+- i3blocks
 - dunst v1.9.0
 - brillo v1.4.12 https://gitlab.com/cameronnemo/brillo
 - Font Awesome 6
-- powerprofilesctl v0.12
-- pactl v16.1
-- gnome terminal v3.48.0
+- pipewire (and it's alsa/pulse translation layers)
+- kitty term
 - feh v3.9.1
 - picom vgit-b700a
 - dmenu-5.2
@@ -20,8 +20,13 @@
 - pacman-contrib
 - wireless_tools-30.pre9-3
 - sysstat-12.7.2-1
-- zathura
+- ananicy
+- auto-cpufreq
 
+## Optional
+
+- vscode
+- neovim
 
 - https://github.com/yurikhan/kitty_grab
 

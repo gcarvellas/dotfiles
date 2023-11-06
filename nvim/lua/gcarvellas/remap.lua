@@ -24,8 +24,8 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 -- Save and quit 
-vim.keymap.set("n", "<leader>w", ":w<cr>")
-vim.keymap.set("n", "<leader>q", ":q!<cr>")
+vim.keymap.set("n", "<leader>w", ":w<cr>", { silent = true})
+vim.keymap.set("n", "<leader>q", ":q!<cr>", { silent = true})
 
 -- Tab management
 vim.keymap.set('n', '<S-t>', ":tabnew<cr>", { silent = true })

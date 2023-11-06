@@ -235,9 +235,6 @@ bindsym XF86AudioMute exec --no-startup-id /usr/bin/bash /usr/bin/volume_brightn
 bindsym XF86MonBrightnessUp exec --no-startup-id /usr/bin/bash /usr/bin/volume_brightness.sh brightness_up
 bindsym XF86MonBrightnessDown exec --no-startup-id /usr/bin/bash /usr/bin/volume_brightness.sh brightness_down
 
-#F4 = Change Battery Modes
-bindsym $mod+F4 exec --no-startup-id /usr/bin/bash /usr/bin/battery_mode.sh
-
 #F5 = Toggle Compositor
 bindsym $mod+F5 exec --no-startup-id /usr/bin/bash /usr/bin/toggle_compositor.sh
 

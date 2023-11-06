@@ -10,7 +10,11 @@ return require('packer').startup(function(use)
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.4',
 	  -- or                            , branch = '0.1.x',
-	  requires = { {'nvim-lua/plenary.nvim'} }
+	  requires = {
+          {'nvim-lua/plenary.nvim'},
+          {'nvim-telescope/telescope-fzf-native.nvim'},
+          {'BurntSushi/ripgrep'}
+      }
   }
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
@@ -37,10 +41,8 @@ return require('packer').startup(function(use)
 	  "williamboman/mason-lspconfig.nvim",
 	  "neovim/nvim-lspconfig",
   }
-  use {
-    "esensar/nvim-dev-container",
-    requires = {
-        "nvim-treesitter/nvim-treesitter"
-    }
-  }
+  use('andweeb/presence.nvim')
+  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+      require("toggleterm").setup()
+  end}
 end)

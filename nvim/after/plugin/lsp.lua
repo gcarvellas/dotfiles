@@ -21,7 +21,7 @@ require('mason-lspconfig').setup({
 		'tsserver',
 		'rust_analyzer',
 		'arduino_language_server',
-		--'java_language_server',
+		'jdtls',
 		'asm_lsp',
 		'bashls',
 		'clangd',
