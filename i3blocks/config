@@ -22,18 +22,18 @@ border_right=0
 border_bottom=0
 border_left=0
 
-[arch_update]
-command={ checkupdates; yay -Qu; } | wc -l
+[gentoo_update]
+command=emerge --update --pretend --newuse --deep @world | grep -o -P '\[ebuild' | wc -l
 interval=once
-label=<span color="#1793d1"> </span>
-border=#1793d1
+label=<span color="#DDDAEC"> </span>
+border=#DDDAEC
 border_top=1
 border_right=0
 border_bottom=0
 border_left=0
 
 [home]
-command=df -h /home | awk 'FNR==2 { gsub(/[A-Za-z]/, ""); printf "%i<span color=\"#d1ffbd\">GiB</span>\n", $4 }'
+command=df -BG /home | awk 'FNR==2 { gsub(/[A-Za-z]/, ""); printf "%i<span color=\"#50fad5\">GiB</span>\n", $4 }'
 interval=3
 label=<span color="#50fad5"> </span>
 border=#50fad5
@@ -43,10 +43,20 @@ border_bottom=0
 border_left=0
 
 [root]
-command=df -h / | awk 'FNR==2 { gsub(/[A-Za-z]/, ""); printf "%i<span color=\"#f1fa8c\">GiB</span>\n", $4 }'
+command=df -BG / | awk 'FNR==2 { gsub(/[A-Za-z]/, ""); printf "%i<span color=\"#f1fa8c\">GiB</span>\n", $4 }'
 interval=3
 label=<span color="#f1fa8c"> </span>
 border=#f1fa8c
+border_top=1
+border_right=0
+border_bottom=0
+border_left=0
+
+[games]
+command=df -BG /home/gcarvellas/Games | awk 'FNR==2 { gsub(/[A-Za-z]/, ""); printf "%i<span color=\"#61538D\">GiB</span>\n", $4 }'
+interval=3
+label=<span color="#61538D"> </span>
+border=#61538D
 border_top=1
 border_right=0
 border_bottom=0
@@ -73,7 +83,7 @@ border_bottom=0
 border_left=0
 
 [memory]
-command=free --giga | awk 'FNR==2{ printf "%i<span color=\"#ff79c6\">GiB</span>\n", $3+$5 }'
+command=free --giga | awk 'FNR==2{ printf "%i<span color=\"#ff79c6\">GiB</span>\n", $3 }'
 interval=2
 label=<span color="#ff79c6"> </span>
 border=#ff79c6

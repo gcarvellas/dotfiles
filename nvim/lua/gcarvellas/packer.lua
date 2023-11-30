@@ -33,7 +33,7 @@ return require('packer').startup(function(use)
 		  -- Autocompletion
 		  {'hrsh7th/nvim-cmp'},
 		  {'hrsh7th/cmp-nvim-lsp'},
-		  {'L3MON4D3/LuaSnip'},
+		  {'L3MON4D3/LuaSnip'}
 	  }
   }
   use {
@@ -45,4 +45,5 @@ return require('packer').startup(function(use)
   use {"akinsho/toggleterm.nvim", tag = '*', config = function()
       require("toggleterm").setup()
   end}
+  use('lambdalisue/suda.vim')
 end)

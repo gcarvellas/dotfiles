@@ -1,0 +1,211 @@
+# NetworkManager
+>=net-wireless/wpa_supplicant-2.10-r3 dbus
+
+>=media-libs/libsndfile-1.2.2 minimal
+
+>=app-office/libreoffice-7.5.8.2 java base
+
+# Cannot compile with minimal for virtualbox
+>=x11-base/xorg-server-21.1.9 suid xorg -minimal
+
+>=x11-misc/picom-10.2 opengl
+
+>=sys-fs/lvm2-2.03.22-r2 lvm thin
+
+>=app-admin/doas-6.8.2 persist
+
+>=app-emulation/qemu-8.1.2 vhost-net aio alsa curl opengl oss
+
+>=app-text/zathura-meta-0 pdf
+
+>=sys-apps/util-linux-2.39.1-r1 abi_x86_32
+# required by media-gfx/gimp-2.10.34-r2::gentoo
+# required by media-gfx/gimp (argument)
+>=app-text/poppler-23.11.0 cairo
+# required by media-gfx/gimp-2.10.34-r2::gentoo
+# required by media-gfx/gimp (argument)
+>=media-libs/gegl-0.4.46 cairo
+# required by app-office/libreoffice-7.5.8.2::gentoo
+# required by app-office/libreoffice (argument)
+>=dev-libs/xmlsec-1.3.1 nss
+# required by www-client/chromium-119.0.6045.105::gentoo[system-harfbuzz]
+# required by www-client/chromium (argument)
+>=media-libs/harfbuzz-8.2.2 icu
+# required by net-print/cups-filters-1.28.17-r2::gentoo[postscript]
+# required by net-print/cups-2.4.7-r1::gentoo
+# required by app-office/libreoffice-7.5.8.2::gentoo[cups]
+# required by app-office/libreoffice (argument)
+>=app-text/ghostscript-gpl-10.02.0 cups
+# required by x11-misc/xdg-utils-1.1.3_p20210805-r1::gentoo
+# required by app-office/libreoffice-7.5.8.2::gentoo
+# required by app-office/libreoffice (argument)
+>=app-text/xmlto-0.0.28-r11 text
+# required by www-client/firefox-119.0::gentoo[system-libvpx]
+# required by www-client/firefox (argument)
+>=media-libs/libvpx-1.13.1-r1 postproc
+# required by www-client/chromium-119.0.6045.105::gentoo
+# required by www-client/chromium (argument)
+>=dev-libs/libxml2-2.11.5-r1 icu
+# required by www-client/chromium-119.0.6045.105::gentoo
+# required by www-client/chromium (argument)
+>=sys-libs/zlib-1.3-r2 minizip
+# required by www-client/chromium-119.0.6045.105::gentoo
+# required by www-client/chromium (argument)
+>=net-libs/nodejs-20.9.0 inspector
+# required by dev-python/PyQtWebEngine-5.15.6-r1::gentoo
+# required by app-misc/anki-2.1.15-r2::gentoo[python_single_target_python3_11]
+# required by app-misc/anki (argument)
+>=dev-python/PyQt5-5.15.10-r1 svg gui widgets network webchannel printsupport
+# required by dev-python/PyQtWebEngine-5.15.6-r1::gentoo
+# required by app-misc/anki-2.1.15-r2::gentoo[python_single_target_python3_11]
+# required by app-misc/anki (argument)
+>=dev-qt/qtwebengine-5.15.11_p20231102:5 widgets jumbo-build
+# required by dev-qt/qtwebengine-5.15.11_p20231102::gentoo
+# required by dev-python/PyQtWebEngine-5.15.6-r1::gentoo
+# required by app-misc/anki-2.1.15-r2::gentoo[python_single_target_python3_11]
+# required by app-misc/anki (argument)
+>=dev-qt/qtwebchannel-5.15.11:5 qml
+# required by games-misc/an-anime-game-launcher-3.9.1::the-anime-team
+# required by games-misc/an-anime-game-launcher (argument)
+>=dev-util/xdelta-3.0.11-r1 lzma
+# required by dev-embedded/arduino-1.8.19::gentoo
+# required by dev-embedded/arduino (argument)
+>=dev-util/astyle-3.4.9 java
+
+# Steam
+>=x11-libs/libX11-1.8.7  abi_x86_32
+>=x11-libs/libXau-1.0.11  abi_x86_32
+>=x11-libs/libxcb-1.16  abi_x86_32
+>=x11-libs/libXdmcp-1.1.4-r2  abi_x86_32
+>=virtual/opengl-7.0-r2  abi_x86_32
+>=media-libs/mesa-23.2.1  abi_x86_32
+>=dev-libs/expat-2.5.0  abi_x86_32
+>=media-libs/libglvnd-1.7.0  abi_x86_32
+>=sys-libs/zlib-1.3-r2  abi_x86_32
+>=x11-libs/libdrm-2.4.117  abi_x86_32
+>=x11-libs/libxshmfence-1.3.2  abi_x86_32
+>=x11-libs/libXext-1.3.5  abi_x86_32
+>=x11-libs/libXxf86vm-1.1.5  abi_x86_32
+>=x11-libs/libXfixes-6.0.1  abi_x86_32
+>=app-arch/zstd-1.5.5  abi_x86_32
+>=sys-devel/llvm-16.0.6  abi_x86_32
+>=x11-libs/libXrandr-1.5.4  abi_x86_32
+>=x11-libs/libXrender-0.9.11  abi_x86_32
+>=dev-libs/libffi-3.4.4-r2  abi_x86_32
+>=sys-libs/ncurses-6.4_p20230401  abi_x86_32
+>=dev-libs/libxml2-2.11.5-r1  abi_x86_32
+>=dev-libs/icu-73.2  abi_x86_32
+sys-libs/gpm  abi_x86_32
+>=virtual/libelf-3-r1  abi_x86_32
+>=dev-libs/elfutils-0.190  abi_x86_32
+>=app-arch/bzip2-1.0.8-r4  abi_x86_32
+>=app-arch/bzip2-1.0.8-r4  abi_x86_32
+>=dev-libs/nspr-4.35-r2 abi_x86_32
+>=dev-libs/nss-3.94  abi_x86_32
+>=net-libs/libndp-1.8  abi_x86_32
+x11-libs/extest abi_x86_32
+>=dev-libs/libevdev-1.13.1 abi_x86_32
+>=virtual/rust-1.73.0 abi_x86_32
+>=dev-lang/rust-1.73.0 nightly rust-src rust-analyzer # added rust-src and rust-analyzer for development
+>=x11-drivers/nvidia-drivers-545.29.02 compat abi_x86_32
+
+>=sys-libs/libxcrypt-4.4.36 abi_x86_32
+>=virtual/libcrypt-2-r1:0/2 abi_x86_32
+
+>=www-apps/hugo-0.119.0 sass
+
+# GDB
+>=sys-devel/gdb-13.2-r2 server xml
+
+# Pulse
+>=media-sound/pulseaudio-16.1 daemon system-wide
+
+# Use ModemManager and not ppp
+>=net-misc/networkmanager-1.44.2 modemmanager -ppp 
+
+>=games-util/game-device-udev-rules-20230603 elogind
+# required by media-libs/mesa-23.2.1::gentoo[X]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by games-util/steam-launcher-1.0.0.76-r2::steam-overlay[steamruntime]
+# required by games-util/steam-launcher (argument)
+>=x11-libs/xcb-util-keysyms-0.4.1 abi_x86_32
+# required by x11-libs/libdrm-2.4.117::gentoo[video_cards_intel]
+# required by media-libs/mesa-23.2.1::gentoo
+# required by virtual/opengl-7.0-r2::gentoo
+# required by games-util/steam-launcher-1.0.0.76-r2::steam-overlay[steamruntime]
+# required by games-util/steam-launcher (argument)
+>=x11-libs/libpciaccess-0.17-r1 abi_x86_32
+# required by net-misc/networkmanager-1.44.2::gentoo
+# required by gnome-extra/nm-applet-1.34.0::gentoo
+# required by @selected
+# required by @world (argument)
+>=sys-apps/dbus-1.15.8 abi_x86_32
+# required by net-misc/networkmanager-1.44.2::gentoo
+# required by gnome-extra/nm-applet-1.34.0::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-libs/glib-2.78.1 abi_x86_32
+# required by dev-libs/nss-3.94::gentoo
+# required by net-misc/networkmanager-1.44.2::gentoo[nss]
+# required by gnome-extra/nm-applet-1.34.0::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-db/sqlite-3.43.2 abi_x86_32
+# required by dev-db/sqlite-3.43.2::gentoo[readline]
+# required by dev-libs/nss-3.94::gentoo
+# required by net-misc/networkmanager-1.44.2::gentoo[nss]
+# required by gnome-extra/nm-applet-1.34.0::gentoo
+# required by @selected
+# required by @world (argument)
+>=sys-libs/readline-8.2_p1 abi_x86_32
+# required by dev-libs/glib-2.78.1::gentoo
+# required by app-i18n/ibus-1.5.29_rc1::gentoo
+# required by app-i18n/ibus-libpinyin-1.15.2::gentoo[python_single_target_python3_11]
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libpcre2-10.42-r1 abi_x86_32
+# required by dev-libs/glib-2.78.1::gentoo
+# required by app-i18n/ibus-1.5.29_rc1::gentoo
+# required by app-i18n/ibus-libpinyin-1.15.2::gentoo[python_single_target_python3_11]
+# required by @selected
+# required by @world (argument)
+>=virtual/libintl-0-r2 abi_x86_32
+# required by dev-libs/glib-2.78.1::gentoo
+# required by app-i18n/ibus-1.5.29_rc1::gentoo
+# required by app-i18n/ibus-libpinyin-1.15.2::gentoo[python_single_target_python3_11]
+# required by @selected
+# required by @world (argument)
+>=virtual/libiconv-0-r2 abi_x86_32
+# required by net-misc/networkmanager-1.44.2::gentoo
+# required by gnome-extra/nm-applet-1.34.0::gentoo
+# required by @selected
+# required by @world (argument)
+>=virtual/libudev-251-r2 abi_x86_32
+# required by virtual/libudev-251-r2::gentoo[-systemd]
+# required by net-misc/networkmanager-1.44.2::gentoo
+# required by gnome-extra/nm-applet-1.34.0::gentoo
+# required by @selected
+# required by @world (argument)
+>=sys-apps/systemd-utils-254.5-r1 abi_x86_32
+# required by sys-apps/systemd-utils-254.5-r1::gentoo[udev]
+# required by virtual/libudev-251-r2::gentoo[-systemd]
+# required by net-misc/networkmanager-1.44.2::gentoo
+# required by gnome-extra/nm-applet-1.34.0::gentoo
+# required by @selected
+# required by @world (argument)
+>=sys-libs/libcap-2.69 abi_x86_32
+# required by sys-libs/libcap-2.69::gentoo[pam]
+# required by sys-apps/systemd-utils-254.5-r1::gentoo[udev]
+# required by virtual/libudev-251-r2::gentoo[-systemd]
+# required by net-misc/networkmanager-1.44.2::gentoo
+# required by gnome-extra/nm-applet-1.34.0::gentoo
+# required by @selected
+# required by @world (argument)
+>=sys-libs/pam-1.5.3 abi_x86_32
+# required by games-arcade/itgmania-0.7.0::gcarvellas-overlay[ffmpeg]
+# required by games-arcade/itgmania (argument)
+>=media-video/ffmpeg-6.0-r10 opengl openh264 # need 264 encoding for jellyfin. media-libs/openh264 is also required
+# required by www-client/firefox-120.0::gentoo[X,pgo]
+# required by @selected
+# required by @world (argument)
+>=x11-base/xorg-server-21.1.9 xvfb
