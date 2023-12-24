@@ -1,4 +1,6 @@
 # See README.md for usage instructions
+set -e
+
 bar_color="#ca594e"
 volume_step=1
 brightness_step=2.5
@@ -83,4 +85,4 @@ case $1 in
     show_brightness_notif
     ;;
 esac
-
+exit 0

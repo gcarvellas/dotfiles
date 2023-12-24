@@ -134,11 +134,6 @@ _G.packer_plugins = {
     path = "/home/gcarvellas/.local/share/nvim/site/pack/packer/start/ripgrep",
     url = "https://github.com/BurntSushi/ripgrep"
   },
-  ["suda.vim"] = {
-    loaded = true,
-    path = "/home/gcarvellas/.local/share/nvim/site/pack/packer/start/suda.vim",
-    url = "https://github.com/lambdalisue/suda.vim"
-  },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
     path = "/home/gcarvellas/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",

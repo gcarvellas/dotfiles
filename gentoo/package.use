@@ -118,12 +118,16 @@ x11-libs/extest abi_x86_32
 >=sys-devel/gdb-13.2-r2 server xml
 
 # Pulse
->=media-sound/pulseaudio-16.1 daemon system-wide
+#>=media-sound/pulseaudio-16.1 daemon system-wide
 
-# Use ModemManager and not ppp
->=net-misc/networkmanager-1.44.2 modemmanager -ppp 
+# Pipewire
+>=media-video/pipewire-1.0.0 sound-server ffmpeg pipewire-alsa echo-cancel extra 
+
+# NetworkManager won't be in charge of bluetooth. Also disables modemmanager
+>=net-misc/networkmanager-1.44.2 -modemmanager -bluetooth 
 
 >=games-util/game-device-udev-rules-20230603 elogind
+
 # required by media-libs/mesa-23.2.1::gentoo[X]
 # required by virtual/opengl-7.0-r2::gentoo
 # required by games-util/steam-launcher-1.0.0.76-r2::steam-overlay[steamruntime]
@@ -208,4 +212,10 @@ x11-libs/extest abi_x86_32
 # required by www-client/firefox-120.0::gentoo[X,pgo]
 # required by @selected
 # required by @world (argument)
->=x11-base/xorg-server-21.1.9 xvfb
+# Need glamor support
+>=x11-base/xorg-server-21.1.9 xvfb -minimal
+# required by virtual/rust-1.74.1::gentoo
+# required by www-client/firefox-120.0.1::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-lang/rust-bin-1.74.1 abi_x86_32

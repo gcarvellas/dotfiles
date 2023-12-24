@@ -5,21 +5,21 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 # Miscellaneous
 
-alias egrep='egrep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias grep='grep --color=auto'
+alias doas="doas "
 alias copy='xclip -sel copy'
+alias paste="xclip -out -sel clip"
 alias l='ls -CF'
 alias la='ls -A'
-alias ll='ls --color=auto -l'
-alias ls='ls --color=auto'
+alias ll='ls -alF --color=auto'
 alias icat="kitty +kitten icat"
 alias ssh="kitty +kitten ssh"
+alias kernel_build="make -j12 && make modules_install && make install && genkernel --install --kernel-config=/usr/src/linux/.config initramfs"
+alias docker-compose="docker compose"
 
 sniff(){
 	# sniffs in current directory
 	# $1 is num of entries
-	du -hs -- * .[^.]* | sort -rh | head -$1
+    doas du -hs -- * .[^.]* | sort -rh | head -$1
 }
 
 alias dcu='docker-compose up'

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 ## Toggle compositor on or off
 
 if [[ "$(ps aux | grep picom | wc -l)" -ge "2" ]]; then #Compositor is on
@@ -9,3 +11,5 @@ else
 	exec picom &!;
 	dunstify -u normal -t 1000 -r 2593 "Compositor On"
 fi
+
+exit 0

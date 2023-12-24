@@ -156,16 +156,16 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym j resize shrink width 5 px or 5 ppt
+        bindsym k resize grow height 5 px or 5 ppt
+        bindsym l resize shrink height 5 px or 5 ppt
+        bindsym semicolon resize grow width 5 px or 5 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Left resize shrink width 5 px or 5 ppt
+        bindsym Down resize grow height 5 px or 5 ppt
+        bindsym Up resize shrink height 5 px or 5 ppt
+        bindsym Right resize grow width 5 px or 5 ppt
 
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
@@ -235,16 +235,16 @@ bindsym XF86AudioMute exec --no-startup-id /bin/bash /usr/bin/volume_brightness.
 bindsym XF86MonBrightnessUp exec --no-startup-id /bin/bash /usr/bin/volume_brightness.sh brightness_up
 bindsym XF86MonBrightnessDown exec --no-startup-id /bin/bash /usr/bin/volume_brightness.sh brightness_down
 
-#F5 = Toggle Compositor
+#F4 = Toggle Compositor
 bindsym $mod+F4 exec --no-startup-id /bin/bash /usr/bin/toggle_compositor.sh
 
-#F6 = Monitor Refresh
+#F5 = Monitor Refresh
 bindsym $mod+F5 exec --no-startup-id /bin/bash /usr/bin/monitor_refresh.sh
 
-#F7 = Bluetooth scan for 10 seconds
-bindsym $mod+F6 exec --no-startup-id /bin/bash /usr/bin/bluetooth_scan.sh
+#56 = Feh Refresh
+bindsym $mod+F6 exec --no-startup-id /bin/bash /usr/bin/feh_refresh.sh
 
-#F8 = Clear all Notifications
+#F7 = Clear all Notifications
 bindsym $mod+F7 exec --no-startup-id dunstctl close all
 
 #Reset IBUS Daemon
@@ -257,7 +257,8 @@ bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/$(d
 
 ## Clipboard Screenshots
 bindsym Ctrl+Print exec --no-startup-id maim | xclip -selection clipboard -t image/png
-bindsym Ctrl+$mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+bindsym $mod+Ctrl+Print exec --no-startup-id maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
 bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
 
 # exec --no-startup-id fcitx -d &
+exec --no-startup-id gentoo-pipewire-launcher &
