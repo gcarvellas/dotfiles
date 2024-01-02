@@ -1,0 +1,4 @@
+media-sound/pulseaudio-daemon
+
+# something's wrong with the latest version of hugo
+>www-apps/hugo-0.119.0

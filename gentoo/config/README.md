@@ -30,4 +30,6 @@ Configs Added:
 - Hardware clock
 - Other miscellaneous configs required for packages
 - Synaptics/Designware/Intel I2C Touchpad (Serial bus controller: Intel Corporation Comet Lake PCH Serial IO I2C Controller #0)
-- libvirt
+- virt-manager/libvirt
+- USB storage
+- Block devices
