@@ -2,3 +2,6 @@ media-sound/pulseaudio-daemon
 
 # something's wrong with the latest version of hugo
 >www-apps/hugo-0.119.0
+
+# Chromium takes too long to compile
+>www-client/chromium-120.0.6099.129

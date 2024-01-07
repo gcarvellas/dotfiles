@@ -231,3 +231,7 @@ x11-libs/extest abi_x86_32
 # required by @selected
 # required by @world (argument)
 >=net-libs/gnutls-3.8.2 tools pkcs11
+
+# Chromium takes too long to use lto/pgo and I don't really use chromium enough to justify it
+>=www-client/chromium-120.0.6099.129 widevine -pgo -lto
+>=sys-kernel/gentoo-sources-6.6.9 symlink
