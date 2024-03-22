@@ -43,3 +43,4 @@ vim.cmd('highlight TabLine cterm=NONE ctermfg=NONE ctermbg=NONE')
 vim.cmd('highlight TabLineFill cterm=NONE ctermfg=NONE ctermbg=NONE')
 vim.cmd('highlight TabLineSel cterm=underline ctermfg=NONE ctermbg=NONE')
 
+vim.g.netrw_bufsettings = 'noma nomod nu rnu nobl nowrap ro'

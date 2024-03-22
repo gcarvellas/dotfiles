@@ -125,3 +125,13 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
 export XDG_RUNTIME_DIR=/tmp/users/$(id -u)
+
+# FCITX
+export GTK_IM_MODULE='fcitx'
+export QT_IM_MODULE='fcitx'
+export SDL_IM_MODULE='fcitx'
+export XMODIFIERS='@in=fcitx'
+
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi

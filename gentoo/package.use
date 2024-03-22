@@ -59,7 +59,7 @@
 # required by dev-python/PyQtWebEngine-5.15.6-r1::gentoo
 # required by app-misc/anki-2.1.15-r2::gentoo[python_single_target_python3_11]
 # required by app-misc/anki (argument)
->=dev-qt/qtwebengine-5.15.11_p20231102:5 widgets jumbo-build
+>=dev-qt/qtwebengine-5.15.11_p20240122 widgets jumbo-build
 # required by dev-qt/qtwebengine-5.15.11_p20231102::gentoo
 # required by dev-python/PyQtWebEngine-5.15.6-r1::gentoo
 # required by app-misc/anki-2.1.15-r2::gentoo[python_single_target_python3_11]
@@ -107,7 +107,7 @@ x11-libs/extest abi_x86_32
 >=dev-libs/libevdev-1.13.1 abi_x86_32
 >=virtual/rust-1.73.0 abi_x86_32
 >=dev-lang/rust-1.73.0 nightly rust-src rust-analyzer # added rust-src and rust-analyzer for development
->=x11-drivers/nvidia-drivers-545.29.02 compat abi_x86_32
+>=x11-drivers/nvidia-drivers-535.154.05 compat abi_x86_32
 
 >=sys-libs/libxcrypt-4.4.36 abi_x86_32
 >=virtual/libcrypt-2-r1:0/2 abi_x86_32
@@ -207,7 +207,7 @@ x11-libs/extest abi_x86_32
 >=sys-libs/pam-1.5.3 abi_x86_32
 # required by games-arcade/itgmania-0.7.0::gcarvellas-overlay[ffmpeg]
 # required by games-arcade/itgmania (argument)
->=media-video/ffmpeg-6.0-r10 opengl openh264 # need 264 encoding for jellyfin. media-libs/openh264 is also required
+>=media-video/ffmpeg-6.0-r10 opengl openh264 x264 vpx opus # need 264 encoding for jellyfin. media-libs/openh264 is also required
 # required by www-client/firefox-120.0::gentoo[X,pgo]
 # required by @selected
 # required by @world (argument)
@@ -235,3 +235,93 @@ x11-libs/extest abi_x86_32
 # Chromium takes too long to use lto/pgo and I don't really use chromium enough to justify it
 >=www-client/chromium-120.0.6099.129 widevine -pgo -lto
 >=sys-kernel/gentoo-sources-6.6.9 symlink
+
+# Firefox. Wayland is necessary for hwaccel
+# required by media-libs/mesa-23.3.3::gentoo[vaapi]
+# required by media-video/mpv-0.37.0::gentoo[egl,drm]
+# required by media-video/jellyfin-media-player-1.9.1::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-libs/libva-2.20.0 abi_x86_32
+# required by media-libs/mesa-23.3.3::gentoo[vdpau]
+# required by media-video/mpv-0.37.0::gentoo[egl,drm]
+# required by media-video/jellyfin-media-player-1.9.1::gentoo
+# required by @selected
+# required by @world (argument)
+>=x11-libs/libvdpau-1.5 abi_x86_32
+
+>=app-emulation/virt-manager-4.1.0 gui
+>=app-emulation/qemu-8.2.0 spice
+# required by app-emulation/virt-manager-4.1.0-r1::gentoo[-test,gui]
+# required by @selected
+# required by @world (argument)
+>=net-misc/spice-gtk-0.42-r3 usbredir
+
+>=app-emulation/libvirt-9.3.0-r1 libvirtd
+# required by app-emulation/libvirt-10.0.0::gentoo[virt-network]
+# required by app-emulation/libvirt-glib-5.0.0::gentoo
+# required by app-emulation/virt-manager-4.1.0-r1::gentoo[-test]
+# required by app-emulation/virt-manager (argument)
+>=net-dns/dnsmasq-2.89-r1 script
+# required by app-emulation/wine-proton-8.0.4::gentoo[sdl]
+# required by app-emulation/wine-proton (argument)
+>=media-libs/libsdl2-2.28.5 haptic
+# required by media-video/peek-1.5.1-r1::gentoo
+# required by media-video/peek (argument)
+# required by media-video/obs-studio-30.0.2::gentoo
+# required by media-video/obs-studio (argument)
+
+# vdpau and vaapi need some old version of ffmpeg. Creates a dependency config
+>=media-video/vlc-3.0.20-r3 xml -vdpau -vaapi lua
+
+>=media-video/mpv-0.37.0 vulkan nvenc
+# required by games-util/steam-launcher-1.0.0.78-r3::steam-overlay
+# required by @selected
+# required by @world (argument)
+>=media-libs/fontconfig-2.15.0 abi_x86_32
+# required by games-util/steam-launcher-1.0.0.78-r3::steam-overlay
+# required by @selected
+# required by @world (argument)
+>=sys-libs/libudev-compat-186-r1 abi_x86_32
+# required by games-util/steam-launcher-1.0.0.78-r3::steam-overlay[pulseaudio]
+# required by @selected
+# required by @world (argument)
+>=media-libs/libpulse-17.0 abi_x86_32
+# required by media-libs/fontconfig-2.15.0::gentoo
+# required by games-util/steam-launcher-1.0.0.78-r3::steam-overlay
+# required by @selected
+# required by @world (argument)
+>=media-libs/freetype-2.13.2 abi_x86_32
+# required by media-libs/freetype-2.13.2::gentoo[png]
+# required by app-text/poppler-24.02.0::gentoo
+# required by app-text/zathura-pdf-poppler-0.3.1-r1::gentoo
+# required by app-text/zathura-meta-0::gentoo[pdf]
+# required by @selected
+# required by @world (argument)
+>=media-libs/libpng-1.6.42 abi_x86_32
+# required by media-libs/libpulse-17.0::gentoo
+# required by app-emulation/qemu-8.2.1::gentoo[pulseaudio]
+# required by @selected
+# required by @world (argument)
+>=media-libs/libsndfile-1.2.2-r2 abi_x86_32
+# required by media-libs/libpulse-17.0::gentoo[asyncns]
+# required by app-emulation/qemu-8.2.1::gentoo[pulseaudio]
+# required by @selected
+# required by @world (argument)
+>=net-libs/libasyncns-0.8-r4 abi_x86_32
+# required by dev-util/rpmdevtools-9.5::gentoo
+# required by dev-util/rpmdevtools (argument)
+>=app-arch/rpm-4.19.1 python
+# required by media-libs/libopenshot-0.3.2-r1::gentoo
+# required by media-video/openshot-3.1.1::gentoo
+# required by media-video/openshot (argument)
+>=dev-qt/qtmultimedia-5.15.12:5 widgets
+# required by media-libs/libopenshot-0.3.2-r1::gentoo
+# required by media-video/openshot-3.1.1::gentoo
+# required by media-video/openshot (argument)
+>=media-video/ffmpeg-6.1.1-r2 xvid mp3 theora vorbis
+# required by media-libs/libopenshot-0.3.2-r1::gentoo[opencv]
+# required by media-video/openshot-3.1.1::gentoo
+# required by media-video/openshot (argument)
+>=media-libs/opencv-4.8.1-r1 contrib contribdnn
+>=app-i18n/fcitx-5.1.7 server

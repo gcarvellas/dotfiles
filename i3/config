@@ -261,5 +261,5 @@ bindsym Ctrl+Print exec --no-startup-id maim | xclip -selection clipboard -t ima
 bindsym $mod+Ctrl+Print exec --no-startup-id maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
 bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
 
-# exec --no-startup-id fcitx -d &
-exec --no-startup-id gentoo-pipewire-launcher &
+exec --no-startup-id fcitx5 -d &
+exec --no-startup-id gentoo-pipewire-launcher restart &

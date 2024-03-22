@@ -5,3 +5,6 @@ media-sound/pulseaudio-daemon
 
 # Chromium takes too long to compile
 >www-client/chromium-120.0.6099.129
+
+# I have issues with newer versions of grub
+>=sys-boot/grub-2.12-r2

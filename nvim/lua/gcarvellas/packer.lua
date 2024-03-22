@@ -42,7 +42,15 @@ return require('packer').startup(function(use)
 	  "neovim/nvim-lspconfig",
   }
   use('andweeb/presence.nvim')
+
+  -- Ctrl + s
   use {"akinsho/toggleterm.nvim", tag = '*', config = function()
       require("toggleterm").setup()
   end}
+  
+  -- LSP loading message
+  use('j-hui/fidget.nvim')
+
+  -- gc to toggle comments
+  use('tpope/vim-commentary')
 end)
