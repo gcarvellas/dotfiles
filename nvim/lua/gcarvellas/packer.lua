@@ -53,4 +53,7 @@ return require('packer').startup(function(use)
 
   -- gc to toggle comments
   use('tpope/vim-commentary')
+
+  -- Prevent arrowkey or hjkl spam
+  use('ja-ford/delaytrain.nvim')
 end)
