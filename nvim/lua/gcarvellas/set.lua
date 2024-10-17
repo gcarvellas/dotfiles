@@ -34,8 +34,11 @@ vim.opt.scrolloff = 999
 vim.api.nvim_set_hl(0, "Normal", { bg = "None" })
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = "None" })
 
-vim.cmd("highlight SignColumn ctermbg=NONE guibg=NONE")
-vim.cmd("highlight ColorColumn ctermbg=NONE guibg=NONE")
+-- prevent breaking colorscheme changes in 0.10.0
+vim.cmd('colorscheme vim')
+
+vim.cmd("highlight SignColumn ctermfg=NONE ctermbg=NONE guifg=NONE guibg=NONE")
+vim.cmd("highlight ColorColumn cterm=NONE ctermbg=NONE guibg=NONE")
 vim.cmd("highlight Pmenu guifg=Yellow ctermfg=Yellow ctermbg=NONE guibg=NONE")
 
 -- Use the same colors for the tabline as the status line
@@ -44,3 +47,5 @@ vim.cmd('highlight TabLineFill cterm=NONE ctermfg=NONE ctermbg=NONE')
 vim.cmd('highlight TabLineSel cterm=underline ctermfg=NONE ctermbg=NONE')
 
 vim.g.netrw_bufsettings = 'noma nomod nu rnu nobl nowrap ro'
+
+cterm=None guifg=NONE guibg=NONE

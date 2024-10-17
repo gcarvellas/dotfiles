@@ -28,7 +28,8 @@ require('mason-lspconfig').setup({
 		'cmake',
 		'gopls',
 		'eslint',
-		'pyright'
+		'pyright',
+        'html'
 	},
     handlers = {
         lsp_zero.default_setup,

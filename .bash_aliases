@@ -6,15 +6,13 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # Miscellaneous
 
 alias doas="doas "
-alias copy='xclip -sel copy'
-alias paste="xclip -out -sel clip"
-alias l='ls -CF'
-alias la='ls -A'
-alias ll='ls -alF --color=auto'
-alias icat="kitty +kitten icat"
-alias ssh="kitty +kitten ssh"
-alias kernel_build="make -j12 && make modules_install && make install && genkernel --install --kernel-config=/usr/src/linux/.config initramfs"
-alias docker-compose="docker compose"
+alias sudo="doas "
+alias copy='wl-copy '
+alias paste="wl-paste "
+alias l='ls -CF '
+alias la='ls -A '
+alias ll='ls -alF --color=auto '
+alias docker-compose="docker-compose "
 
 sniff(){
 	# sniffs in current directory
