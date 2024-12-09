@@ -1,0 +1,90 @@
+* {
+	font-size: 16px;
+	font-family: DejaVu Hack Sans Mono;
+}
+
+window#waybar {
+	background: #543636;
+    color: #f2d399;
+}
+
+#custom-right-arrow-dark,
+#custom-left-arrow-dark {
+    color: #442c2c;
+}
+#custom-right-arrow-light,
+#custom-left-arrow-light {
+	color: #543636;
+    background: #442c2c;
+}
+
+#workspaces,
+#clock.1,
+#clock.2,
+#clock.3,
+#pulseaudio,
+#memory,
+#cpu,
+#battery,
+#disk,
+#custom-gpu,
+#custom-updates,
+#custom-anki,
+#tray {
+	background: #442c2c;
+}
+
+#workspaces button {
+	padding: 0 2px;
+	color: #f2d399;
+}
+#workspaces button.active {
+	background: #f2d399;
+    color: #442c2c;
+}
+#workspaces button:hover {
+	box-shadow: inherit;
+	text-shadow: inherit;
+}
+#workspaces button:hover {
+	background: #ca4444;
+	border: #bf3636;
+	padding: 0 3px;
+}
+
+#pulseaudio {
+	color: #bd93f9;
+}
+#memory {
+	color: #ff79c6;
+}
+#custom-gpu {
+    color: #ffb86c;
+}
+#cpu {
+	color: #ff5555;
+}
+#battery {
+	color: #50fa7b;
+}
+#disk {
+	color: #f1fa8c;
+}
+#custom-updates {
+    color: #1793d1;
+}
+#custom-anki {
+    color: #56a2df;
+}
+
+#clock,
+#pulseaudio,
+#memory,
+#cpu,
+#battery,
+#custom-gpu,
+#custom-updates,
+#custom-anki,
+#disk {
+	padding: 0 10px;
+}

@@ -1,0 +1,154 @@
+// -*- mode: json -*-
+
+{
+	"layer": "top",
+	"position": "bottom",
+
+	"modules-left": [
+		"hyprland/workspaces",
+		"custom/right-arrow-dark"
+	],
+	"modules-center": [
+		"custom/left-arrow-dark",
+		"clock#1",
+		"custom/left-arrow-light",
+		"custom/left-arrow-dark",
+		"clock#2",
+		"custom/right-arrow-dark",
+		"custom/right-arrow-light",
+		"clock#3",
+		"custom/right-arrow-dark"
+	],
+	"modules-right": [
+		"custom/left-arrow-dark",
+        "custom/updates",
+        "custom/left-arrow-light",
+        "custom/left-arrow-dark",
+        "pulseaudio",
+        "custom/left-arrow-light",
+        "custom/left-arrow-dark",
+		"custom/anki",
+		"custom/left-arrow-light",
+		"custom/left-arrow-dark",
+        "custom/gpu",
+        "custom/left-arrow-light",
+        "custom/left-arrow-dark",
+		"memory",
+		"custom/left-arrow-light",
+		"custom/left-arrow-dark",
+		"cpu",
+		"custom/left-arrow-light",
+		"custom/left-arrow-dark",
+		"battery",
+		"custom/left-arrow-light",
+		"custom/left-arrow-dark",
+		"tray"
+	],
+
+	"custom/left-arrow-dark": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/left-arrow-light": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/right-arrow-dark": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/right-arrow-light": {
+		"format": "",
+		"tooltip": false
+	},
+
+	"hyprland/workspaces": {
+		"disable-scroll": true,
+		"format": "{name}"
+	},
+
+	"clock#1": {
+		"format": "{:%a}",
+		"tooltip": false
+	},
+	"clock#2": {
+		"format": "{:%I:%M%p}",
+		"tooltip": false
+	},
+	"clock#3": {
+		"format": "{:%m-%d}",
+		"tooltip": false
+	},
+
+	"pulseaudio": {
+		"format": "{icon} {volume:2}%",
+		"format-bluetooth": "{icon}  {volume}%",
+		"format-muted": "  ",
+		"format-icons": {
+			"headphones": "  ",
+			"default": [
+				"  ",
+				"  "
+			]
+		},
+		"scroll-step": 5,
+		"on-click": "pamixer -t",
+		"on-click-right": "pavucontrol"
+	},
+	"memory": {
+		"interval": 5,
+		"format": "󰍛   {}%"
+	},
+	"cpu": {
+		"interval": 5,
+		"format": "󰻠  {usage:2}%"
+	},
+    "custom/gpu": {
+        "exec": "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits",
+        "format": "   {}%",
+        "return-type": "",
+        "interval": 4
+    },
+    "custom/updates": {
+        "exec": "{ CHECKUPDATES_DB=/tmp/checkup-db-$(cat /proc/sys/kernel/random/uuid) checkupdates; yay -Qu; } | wc -l",
+        "format": "   {}",
+        "return-type": "",
+        "interval": "once"
+    },
+    "custom/anki": {
+        "exec": "/bin/bash -c 'source /home/gcarvellas/Projects/anki-review-count/.venv/bin/activate && python3 /home/gcarvellas/Projects/anki-review-count/anki-review-count.py'",
+        "format": "   {}",
+        "return-type": "",
+        "interval": 60
+    },
+	"battery": {
+		"states": {
+			"good": 95,
+			"warning": 30,
+			"critical": 15
+		},
+		"format": "{icon} {capacity}%",
+        "format-charging": "<span font='Font Awesome 5 Free'></span>  {capacity}%",
+        "format-full": "<span font='Font Awesome 5 Free'></span>  {capacity}%",
+		"format-icons": [
+			"  ",
+			"  ",
+			"  ",
+			"  ",
+			"  "
+		]
+	},
+	"disk#1": {
+		"interval": 5,
+		"format": "  {percentage_used:2}%",
+		"path": "/"
+	},
+	"disk#2": {
+		"interval": 5,
+		"format": "    {percentage_used:2}%",
+		"path": "/home"
+	},
+	"tray": {
+		"icon-size": 20
+	}
+}
