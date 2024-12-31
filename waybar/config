@@ -27,9 +27,12 @@
         "pulseaudio",
         "custom/left-arrow-light",
         "custom/left-arrow-dark",
-		"custom/anki",
+		"custom/anki-japanese",
 		"custom/left-arrow-light",
 		"custom/left-arrow-dark",
+        "custom/anki-programming",
+        "custom/left-arrow-light",
+        "custom/left-arrow-dark",
         "custom/gpu",
         "custom/left-arrow-light",
         "custom/left-arrow-dark",
@@ -104,19 +107,25 @@
 		"format": "󰻠  {usage:2}%"
 	},
     "custom/gpu": {
-        "exec": "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits",
+        "exec": "python /home/gcarvellas/Github/dotfiles/bin/gpu_reader.py",
         "format": "   {}%",
         "return-type": "",
         "interval": 4
     },
     "custom/updates": {
-        "exec": "{ CHECKUPDATES_DB=/tmp/checkup-db-$(cat /proc/sys/kernel/random/uuid) checkupdates; yay -Qu; } | wc -l",
-        "format": "   {}",
+        "exec": "xbps-install --memory-sync --dry-run --update | grep -Fe update -e install | wc -l",
+        "format": "   {}",
         "return-type": "",
         "interval": "once"
     },
-    "custom/anki": {
-        "exec": "/bin/bash -c 'source /home/gcarvellas/Projects/anki-review-count/.venv/bin/activate && python3 /home/gcarvellas/Projects/anki-review-count/anki-review-count.py'",
+    "custom/anki-japanese": {
+        "exec": "/bin/bash -c 'source /home/gcarvellas/Github/dotfiles/anki-review-count/.venv/bin/activate && python /home/gcarvellas/Github/dotfiles/anki-review-count/anki-review-count.py Japanese'",
+        "format": "   {}",
+        "return-type": "",
+        "interval": 60
+    },
+    "custom/anki-programming": {
+        "exec": "/bin/bash -c 'source /home/gcarvellas/Github/dotfiles/anki-review-count/.venv/bin/activate && python /home/gcarvellas/Github/dotfiles/anki-review-count/anki-review-count.py Programming'",
         "format": "   {}",
         "return-type": "",
         "interval": 60

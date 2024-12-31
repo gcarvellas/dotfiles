@@ -20,7 +20,6 @@ require('mason-lspconfig').setup({
 	ensure_installed = {
 		'rust_analyzer',
 		'arduino_language_server',
-		'asm_lsp',
 		'bashls',
         'cssls',
         'jsonls',

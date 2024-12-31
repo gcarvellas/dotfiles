@@ -78,3 +78,6 @@ fi
 
 bind '"\e[27;2;13~":"\n"'
 bind '"\e[27;5;13~":"\n"'
+
+# Add ~/Github/dotfiles/bin to PATH
+export PATH="$HOME/Github/dotfiles/bin:$PATH"

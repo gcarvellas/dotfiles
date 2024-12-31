@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+#!/bin/sh
+case "$(file -Lb --mime-type -- "$1")" in
+    image/*)
+        chafa -f sixel -s "$2x$3" --animate off --polite on "$1"
+        exit 1
+        ;;
+    video/*)
+        chafa -f sixel -s "$2x$3" --animate off --polite on $(vidthumb "$1" --size "$2x$3")
+        exit 1
+        ;;
+    text/*)
+        pistol "$1"
+        exit 1
+        ;;
+    application/pdf)
+        pdftoppm -f 1 -singlefile -jpeg $1 | chafa -f sixel -s "$2x$3" --animate off --polite on
+        exit 1
+        ;;
+    *)
+        pistol "$1"
+        exit 1
+        ;;
+esac

@@ -5,8 +5,8 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 # Miscellaneous
 
-alias doas="doas "
-alias sudo="doas "
+alias doas="sudo "
+alias sudo="sudo "
 alias copy='wl-copy '
 alias paste="wl-paste "
 alias l='ls -CF '

@@ -29,7 +29,8 @@ window#waybar {
 #disk,
 #custom-gpu,
 #custom-updates,
-#custom-anki,
+#custom-anki-japanese,
+#custom-anki-programming,
 #tray {
 	background: #442c2c;
 }
@@ -71,10 +72,13 @@ window#waybar {
 	color: #f1fa8c;
 }
 #custom-updates {
-    color: #1793d1;
+    color: #448364;
 }
-#custom-anki {
+#custom-anki-japanese {
     color: #56a2df;
+}
+#custom-anki-programming {
+	color: #ff5555;
 }
 
 #clock,
@@ -84,7 +88,8 @@ window#waybar {
 #battery,
 #custom-gpu,
 #custom-updates,
-#custom-anki,
+#custom-anki-japanese,
+#custom-anki-programming,
 #disk {
 	padding: 0 10px;
 }

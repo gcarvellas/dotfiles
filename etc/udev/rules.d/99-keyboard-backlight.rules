@@ -1,0 +1,2 @@
+SUBSYSTEM=="power_supply", ATTR{status}=="Discharging", RUN+="/bin/bash -c 'echo 0 | tee /sys/class/leds/asus::kbd_backlight/brightness'"
+SUBSYSTEM=="power_supply", ATTR{status}=="Charging", RUN+="/bin/bash -c 'echo 3 | tee /sys/class/leds/asus::kbd_backlight/brightness'"

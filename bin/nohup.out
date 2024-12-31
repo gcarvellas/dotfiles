@@ -1,0 +1,74 @@
+[W][04269.141590] mod.rt       | [     module-rt.c:  317 translate_error()] RTKit error: org.freedesktop.DBus.Error.ServiceUnknown
+[W][04269.141626] mod.rt       | [     module-rt.c:  982 do_rtkit_setup()] RTKit does not give us MaxRealtimePriority, using 1
+[W][04269.141772] mod.rt       | [     module-rt.c:  317 translate_error()] RTKit error: org.freedesktop.DBus.Error.ServiceUnknown
+[W][04269.141777] mod.rt       | [     module-rt.c:  987 do_rtkit_setup()] RTKit does not give us MinNiceLevel, using 0
+[W][04269.141895] mod.rt       | [     module-rt.c:  317 translate_error()] RTKit error: org.freedesktop.DBus.Error.ServiceUnknown
+[W][04269.141900] mod.rt       | [     module-rt.c:  992 do_rtkit_setup()] RTKit does not give us RTTimeUSecMax, using -1
+[W][04269.152723] mod.rt       | [     module-rt.c:  317 translate_error()] RTKit error: org.freedesktop.DBus.Error.ServiceUnknown
+[W][04269.152745] mod.rt       | [     module-rt.c:  982 do_rtkit_setup()] RTKit does not give us MaxRealtimePriority, using 1
+[W][04269.152909] mod.rt       | [     module-rt.c:  317 translate_error()] RTKit error: org.freedesktop.DBus.Error.ServiceUnknown
+[W][04269.152915] mod.rt       | [     module-rt.c:  987 do_rtkit_setup()] RTKit does not give us MinNiceLevel, using 0
+[W][04269.153197] mod.rt       | [     module-rt.c:  317 translate_error()] RTKit error: org.freedesktop.DBus.Error.ServiceUnknown
+[W][04269.153209] mod.rt       | [     module-rt.c:  992 do_rtkit_setup()] RTKit does not give us RTTimeUSecMax, using -1
+W 22:57:37.163286             mod.rt ../src/modules/module-rt.c:317:translate_error: RTKit error: org.freedesktop.DBus.Error.ServiceUnknown
+W 22:57:37.163348             mod.rt ../src/modules/module-rt.c:982:do_rtkit_setup: RTKit does not give us MaxRealtimePriority, using 1
+W 22:57:37.163489             mod.rt ../src/modules/module-rt.c:317:translate_error: RTKit error: org.freedesktop.DBus.Error.ServiceUnknown
+W 22:57:37.163497             mod.rt ../src/modules/module-rt.c:987:do_rtkit_setup: RTKit does not give us MinNiceLevel, using 0
+W 22:57:37.163614             mod.rt ../src/modules/module-rt.c:317:translate_error: RTKit error: org.freedesktop.DBus.Error.ServiceUnknown
+W 22:57:37.163620             mod.rt ../src/modules/module-rt.c:992:do_rtkit_setup: RTKit does not give us RTTimeUSecMax, using -1
+N 22:57:37.164399 wp-internal-comp-l ../lib/wp/private/internal-comp-loader.c:945:wp_internal_comp_loader_load: Loading profile 'main'
+E 22:57:38.472185           spa.alsa ../spa/plugins/alsa/acp/alsa-ucm.c:1077:probe_volumes: Path Capture is not a volume or mute control
+N 22:57:38.474883  m-dbus-connection ../modules/module-dbus-connection.c:138:on_connection_closed: <WpDBusConnection:0x561783610ac0> DBus connection closed: Underlying GIOStream returned 0 bytes on an async read
+N 22:57:38.475100  m-dbus-connection ../modules/module-dbus-connection.c:146:on_connection_closed: <WpDBusConnection:0x561783610ac0> Trying to reconnect after core sync
+W 22:57:38.480293  m-dbus-connection ../modules/module-dbus-connection.c:123:on_sync_reconnect: <WpDBusConnection:0x561783610ac0> core sync error: core disconnected
+N 22:57:38.480314        wireplumber ../src/main.c:71:on_disconnected: disconnected from pipewire
+W 22:57:38.480343            pw.core ../src/pipewire/core.c:183:destroy_proxy: 0x5617836a34a0: leaked proxy 0x5617836e67a0 id:3
+W 22:57:38.480345            pw.core ../src/pipewire/core.c:183:destroy_proxy: 0x5617836a34a0: leaked proxy 0x5617836f3a80 id:4
+W 22:57:38.480346            pw.core ../src/pipewire/core.c:183:destroy_proxy: 0x5617836a34a0: leaked proxy 0x5617836fc200 id:5
+W 22:57:38.480347            pw.core ../src/pipewire/core.c:183:destroy_proxy: 0x5617836a34a0: leaked proxy 0x5617836fb7f0 id:6
+[W][04272.065007] mod.rt       | [     module-rt.c:  317 translate_error()] RTKit error: org.freedesktop.DBus.Error.ServiceUnknown
+[W][04272.065025] mod.rt       | [     module-rt.c:  982 do_rtkit_setup()] RTKit does not give us MaxRealtimePriority, using 1
+[W][04272.065109] mod.rt       | [     module-rt.c:  317 translate_error()] RTKit error: org.freedesktop.DBus.Error.ServiceUnknown
+[W][04272.065120] mod.rt       | [     module-rt.c:  987 do_rtkit_setup()] RTKit does not give us MinNiceLevel, using 0
+[W][04272.065197] mod.rt       | [     module-rt.c:  317 translate_error()] RTKit error: org.freedesktop.DBus.Error.ServiceUnknown
+[W][04272.065199] mod.rt       | [     module-rt.c:  992 do_rtkit_setup()] RTKit does not give us RTTimeUSecMax, using -1
+W 22:57:40.084740             mod.rt ../src/modules/module-rt.c:317:translate_error: RTKit error: org.freedesktop.DBus.Error.ServiceUnknown
+W 22:57:40.084776             mod.rt ../src/modules/module-rt.c:982:do_rtkit_setup: RTKit does not give us MaxRealtimePriority, using 1
+W 22:57:40.084915             mod.rt ../src/modules/module-rt.c:317:translate_error: RTKit error: org.freedesktop.DBus.Error.ServiceUnknown
+W 22:57:40.084920             mod.rt ../src/modules/module-rt.c:987:do_rtkit_setup: RTKit does not give us MinNiceLevel, using 0
+W 22:57:40.085031             mod.rt ../src/modules/module-rt.c:317:translate_error: RTKit error: org.freedesktop.DBus.Error.ServiceUnknown
+W 22:57:40.085057             mod.rt ../src/modules/module-rt.c:992:do_rtkit_setup: RTKit does not give us RTTimeUSecMax, using -1
+[W][04272.075692] mod.rt       | [     module-rt.c:  317 translate_error()] RTKit error: org.freedesktop.DBus.Error.ServiceUnknown
+[W][04272.075697] mod.rt       | [     module-rt.c:  982 do_rtkit_setup()] RTKit does not give us MaxRealtimePriority, using 1
+N 22:57:40.085506 wp-internal-comp-l ../lib/wp/private/internal-comp-loader.c:945:wp_internal_comp_loader_load: Loading profile 'main'
+[W][04272.075781] mod.rt       | [     module-rt.c:  317 translate_error()] RTKit error: org.freedesktop.DBus.Error.ServiceUnknown
+[W][04272.075783] mod.rt       | [     module-rt.c:  987 do_rtkit_setup()] RTKit does not give us MinNiceLevel, using 0
+[W][04272.075860] mod.rt       | [     module-rt.c:  317 translate_error()] RTKit error: org.freedesktop.DBus.Error.ServiceUnknown
+[W][04272.075862] mod.rt       | [     module-rt.c:  992 do_rtkit_setup()] RTKit does not give us RTTimeUSecMax, using -1
+E 22:57:41.358891           spa.alsa ../spa/plugins/alsa/acp/alsa-ucm.c:1077:probe_volumes: Path Capture is not a volume or mute control
+N 22:57:41.369906 wp-internal-comp-l ../lib/wp/private/internal-comp-loader.c:589:on_component_loaded: <WpCore:0x55574cca6140> optional component 'support.logind [module: libwireplumber-module-logind]' failed to load: Failed to locate module libwireplumber-module-logind
+N 22:57:41.369926 wp-internal-comp-l ../lib/wp/private/internal-comp-loader.c:641:wp_component_array_load_task_execute_step: <WpCore:0x55574cca6140> skipping component 'monitor.bluez.seat-monitoring [virtual]' because some of its dependencies were not loaded
+N 22:57:41.370566          wp-device ../lib/wp/device.c:630:wp_spa_device_new_from_spa_factory: SPA handle 'api.bluez5.enum.dbus' could not be loaded; is it installed?
+N 22:57:41.370579         s-monitors bluez.lua:386:createMonitor: PipeWire's BlueZ SPA plugin is missing or broken. Bluetooth devices will not be supported.
+N 22:57:41.371074          wp-device ../lib/wp/device.c:630:wp_spa_device_new_from_spa_factory: SPA handle 'api.bluez5.midi.enum' could not be loaded; is it installed?
+N 22:57:41.371086         s-monitors bluez-midi.lua:95:createMonitor: PipeWire's BlueZ MIDI SPA missing or broken. Bluetooth not supported.
+E 22:57:41.371135        pw.resource ../src/pipewire/resource.c:255:pw_resource_errorf_id: can't create node: No such file or directory
+W 22:57:41.371138            wp-node ../lib/wp/node.c:913:wp_impl_node_new_from_pw_factory: failed to create node from factory 'spa-node-factory'
+N 22:57:41.371143         s-monitors bluez-midi.lua:130:createServers: Failed to create BLE MIDI server.
+[1:11:13.607924358] [12226] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:325 [0mlibcamera v0.3.2
+[1:11:13.608902175] [12335] [1;33m WARN [1;37mV4L2 [1;34mv4l2_pixelformat.cpp:346 [0mUnsupported V4L2 pixel format H264
+dbus-daemon[12218]: [session uid=1000 pid=12218] Activating service name='org.freedesktop.impl.portal.PermissionStore' requested by ':1.6' (uid=1000 pid=12226 comm="/usr/bin/wireplumber")
+dbus-daemon[12218]: [session uid=1000 pid=12218] Successfully activated service 'org.freedesktop.impl.portal.PermissionStore'
+N 22:57:42.522742  m-dbus-connection ../modules/module-dbus-connection.c:138:on_connection_closed: <WpDBusConnection:0x55574cd315a0> DBus connection closed: Underlying GIOStream returned 0 bytes on an async read
+N 22:57:42.528524  m-dbus-connection ../modules/module-dbus-connection.c:146:on_connection_closed: <WpDBusConnection:0x55574cd315a0> Trying to reconnect after core sync
+W 22:57:42.533983  m-dbus-connection ../modules/module-dbus-connection.c:123:on_sync_reconnect: <WpDBusConnection:0x55574cd315a0> core sync error: core disconnected
+N 22:57:42.534001        wireplumber ../src/main.c:71:on_disconnected: disconnected from pipewire
+W 22:57:42.534101            pw.core ../src/pipewire/core.c:183:destroy_proxy: 0x55574cdb7990: leaked proxy 0x55574cce6370 id:7
+W 22:57:42.534105            pw.core ../src/pipewire/core.c:183:destroy_proxy: 0x55574cdb7990: leaked proxy 0x55574cdeb600 id:8
+W 22:57:42.534106            pw.core ../src/pipewire/core.c:183:destroy_proxy: 0x55574cdb7990: leaked proxy 0x55574cf16a70 id:18
+W 22:57:42.534108            pw.core ../src/pipewire/core.c:183:destroy_proxy: 0x55574cdb7990: leaked proxy 0x55574cfaae60 id:19
+W 22:57:42.534110            pw.core ../src/pipewire/core.c:183:destroy_proxy: 0x55574cdb7990: leaked proxy 0x55574cea4aa0 id:20
+W 22:57:42.534111            pw.core ../src/pipewire/core.c:183:destroy_proxy: 0x55574cdb7990: leaked proxy 0x55574cea28b0 id:21
+W 22:57:42.534113            pw.core ../src/pipewire/core.c:183:destroy_proxy: 0x55574cdb7990: leaked proxy 0x55574cfab090 id:22
+W 22:57:42.534115            pw.core ../src/pipewire/core.c:183:destroy_proxy: 0x55574cdb7990: leaked proxy 0x55574cf759c0 id:23
+W 22:57:42.534117            pw.core ../src/pipewire/core.c:183:destroy_proxy: 0x55574cdb7990: leaked proxy 0x55574cd5b990 id:26

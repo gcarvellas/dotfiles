@@ -1,0 +1,2 @@
+#!/bin/bash
+/home/gcarvellas/Github/dotfiles/bin/chromium --app="chrome-extension://lkhiljgmbeecmljiogckofcalncmfnfo/pages/app-window/index.html#/app/Dictionary"
