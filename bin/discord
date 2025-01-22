@@ -1,2 +1,2 @@
 #!/bin/bash
-dbus-run-session flatpak run dev.vencord.Vesktop
+/opt/Vesktop/vesktop $(tr '\n' ' ' < ~/.config/electron-flags.conf)

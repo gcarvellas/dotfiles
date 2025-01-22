@@ -20,6 +20,7 @@ se_columns_indices = [i for i, col in enumerate(header) if col in to_search]
 
 sum_se = 0
 
+# TODO this value has gone over 100%. Not sure why
 values = lines[-1].split(",")
 for idx in se_columns_indices:
     sum_se += round(float(values[idx]))

@@ -3,13 +3,13 @@
 state=$1
 
 if [ "$state" == "on" ]; then
-    hyprctl keyword monitor "eDP-1,highrr,0x1920,1"
+    hyprctl keyword monitor "eDP-1,highrr,0x1920,1.5"
 elif [ "$state" == "off" ]; then
    # in order for this to work gotta have 'HandleLidSwitch=ignore' set in
    # /etc/systemd/logind.conf
    count_monitors=$(hyprctl monitors | grep -c '^Monitor')
    if [ "$count_monitors" = 1 ]; then
-       systemctl suspend
+       loginctl suspend
    else
        hyprctl keyword monitor "eDP-1, disable"
    fi

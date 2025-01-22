@@ -30,7 +30,7 @@ window#waybar {
 #custom-gpu,
 #custom-updates,
 #custom-anki-japanese,
-#custom-anki-programming,
+#custom-anki-miscellaneous,
 #tray {
 	background: #442c2c;
 }
@@ -77,7 +77,7 @@ window#waybar {
 #custom-anki-japanese {
     color: #56a2df;
 }
-#custom-anki-programming {
+#custom-anki-miscellaneous {
 	color: #ff5555;
 }
 
@@ -89,7 +89,7 @@ window#waybar {
 #custom-gpu,
 #custom-updates,
 #custom-anki-japanese,
-#custom-anki-programming,
+#custom-anki-miscellaneous,
 #disk {
 	padding: 0 10px;
 }

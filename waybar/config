@@ -30,7 +30,7 @@
 		"custom/anki-japanese",
 		"custom/left-arrow-light",
 		"custom/left-arrow-dark",
-        "custom/anki-programming",
+        "custom/anki-miscellaneous",
         "custom/left-arrow-light",
         "custom/left-arrow-dark",
         "custom/gpu",
@@ -113,7 +113,7 @@
         "interval": 4
     },
     "custom/updates": {
-        "exec": "xbps-install --memory-sync --dry-run --update | grep -Fe update -e install | wc -l",
+        "exec": "/home/gcarvellas/Github/dotfiles/bin/wait_for_internet.sh && xbps-install --memory-sync --dry-run --update | grep -Fe update -e install | wc -l",
         "format": "   {}",
         "return-type": "",
         "interval": "once"
@@ -124,8 +124,8 @@
         "return-type": "",
         "interval": 60
     },
-    "custom/anki-programming": {
-        "exec": "/bin/bash -c 'source /home/gcarvellas/Github/dotfiles/anki-review-count/.venv/bin/activate && python /home/gcarvellas/Github/dotfiles/anki-review-count/anki-review-count.py Programming'",
+    "custom/anki-miscellaneous": {
+        "exec": "/bin/bash -c 'source /home/gcarvellas/Github/dotfiles/anki-review-count/.venv/bin/activate && python /home/gcarvellas/Github/dotfiles/anki-review-count/anki-review-count.py Miscellaneous'",
         "format": "   {}",
         "return-type": "",
         "interval": 60
