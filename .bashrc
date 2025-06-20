@@ -70,7 +70,7 @@ export NVM_DIR="$HOME/.nvm"
 export GTK_IM_MODULE='fcitx'
 export QT_IM_MODULE='fcitx'
 export SDL_IM_MODULE='fcitx'
-export XMODIFIERS='@in=fcitx'
+export XMODIFIERS='@im=fcitx'
 
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
@@ -78,6 +78,3 @@ fi
 
 bind '"\e[27;2;13~":"\n"'
 bind '"\e[27;5;13~":"\n"'
-
-# Add ~/Github/dotfiles/bin to PATH
-export PATH="$HOME/Github/dotfiles/bin:$PATH"

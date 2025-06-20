@@ -28,6 +28,7 @@ window#waybar {
 #battery,
 #disk,
 #custom-gpu,
+#custom-npu,
 #custom-updates,
 #custom-anki-japanese,
 #custom-anki-miscellaneous,
@@ -62,6 +63,9 @@ window#waybar {
 #custom-gpu {
     color: #ffb86c;
 }
+#custom-npu {
+    color: #bebdb8;
+}
 #cpu {
 	color: #ff5555;
 }
@@ -72,7 +76,7 @@ window#waybar {
 	color: #f1fa8c;
 }
 #custom-updates {
-    color: #448364;
+    color: #1793d1;
 }
 #custom-anki-japanese {
     color: #56a2df;

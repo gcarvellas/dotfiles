@@ -1,2 +1,2 @@
 #!/bin/bash
-/opt/Vesktop/vesktop $(tr '\n' ' ' < ~/.config/electron-flags.conf)
+vesktop $(tr '\n' ' ' < ~/.config/electron-flags.conf)

@@ -26,7 +26,7 @@ require('mason-lspconfig').setup({
 		'clangd',
 		'cmake',
 		'gopls',
-		'eslint',
+        'ts_ls',
 		'pyright',
         'html'
 	},
